@@ -1,0 +1,34 @@
+{
+  "name": "sneaker-store",
+  "version": "1.0.0",
+  "description": "sneaker store for CV",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon app.js",
+    "start": "node app.js",
+    "client": "npm run start --prefix Client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "store",
+    "CV",
+    "React",
+    "redux",
+    "express",
+    "deploy"
+  ],
+  "author": "Erick Shafikov",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.7",
+    "express": "^4.18.1",
+    "express-validator": "^6.14.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.4.3"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.2",
+    "nodemon": "^2.0.19"
+  }
+}
